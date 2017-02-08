@@ -30,7 +30,7 @@ p {
 
 body {
     width: 100%;
-    background-color:#EE9527;    
+    background-color:#EE9527;
 }
 
 
@@ -91,7 +91,7 @@ h5 {
     font-size:5em;
     text-align:center;
     margin-right:1.5em;
-    
+
 }
 
 
@@ -106,7 +106,7 @@ h5 {
     margin-top:2em;
     margin-bottom:3em;
     margin-right:2em;
-          
+
       }
 
 /* Divs */
@@ -118,7 +118,7 @@ h5 {
 
     }
 
-    
+
 /* Images */
 
     #banner {
@@ -152,25 +152,6 @@ h5 {
     }
 
 /* Java stuffs */
-#testselect{
-    display: none;
-}
-
-#history{
-    display: none;
-}
-
-#css {
-    display: none;
-}
-
-#html {
-    display: none;
-}
-
-#javascript {
-    display: none;
-}
 
 #takeQuiz {
     cursor: pointer;

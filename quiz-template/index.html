@@ -7,35 +7,18 @@
 </head>
 
 <body>
-<div id="mainpage">
 
-<div id="border"> 
-  <img src="_assets/images/logo.jpg" id="logo">  
-</div>   
-    
-    <img src="_assets/images/banner.jpg" id="banner">
- 
-
-    <h2>How much do you really know about the Web?</h2>
-    <div class="center">
-    <h2 id="takeQuiz" onclick="displayTestSelect()">Take the Quiz to find out!</h3>
-    </div>
-</div>
     <div id="testselect">
     <h1 id="title">Hello! Enter your name!</h1>
     <form id="nameForm">
-        nickname:<br/>
+        Nickname:<br/>
         <input type="text" id="nameInput"><br/>
-        <input type="button" name="answer" value="History" id="c" onclick="getName(); goToHistory()"><br/>
-        <input type="button" name="answer" value="CSS" id="i" onclick="getName(); goToCss()"><br/>
-        <input type="button" name="answer" value="HTML" id="i" onclick="getName(); goToHtml()"><br/>
-        <input type="button" name="answer" value="Javascript" id="i" onclick="getName(); goToJavascript()"><br/>
-        <input type="button" value="Home" onclick="goHome()">
+        <input type="button" name="answer" value="Submit Name" id="c" onclick="getName(); startQuiz()"><br/>
     </form>
-        
+
     <p id="error"></p>
         </div>
-    
+
     <div id="history">
         <form>
             <div id="qArray">
@@ -44,9 +27,9 @@
                 <input type="radio" name="answer" value="c" id="c">military<br/>
                 <input type="radio" name="answer" value="i" id="i">shipping<br/>
                 <input type="radio" name="answer" value="i" id="i">construction<br/>
-                <input type="radio" name="answer" value="i" id="i">commerce<br/>    
+                <input type="radio" name="answer" value="i" id="i">commerce<br/>
             </form>
-            
+
             <form id="q2" required>
                 <p> Who is the father of the World Wide Web?</p><br/>
                 <input type="radio" name="answer" id="i">Bill H. Gates<br/>
@@ -54,7 +37,7 @@
                 <input type="radio" name="answer" id="c">Tim B. Lee<br/>
                 <input type="radio" name="answer" id="i">Steve P. Jobs<br/>
             </form>
-            
+
             <form id="q3" required>
                 <p> What is the current version of HTML?</p><br/>
                 <input type="radio" name="answer" id="i">HTML2.5<br/>
@@ -62,7 +45,7 @@
                 <input type="radio" name="answer" id="i">HTML5.1<br/>
                 <input type="radio" name="answer" id="i">HTML5.0.2<br/>
             </form>
-            
+
             <form id="q4">
                 <p>What version of CSS is the latest standard?</p><br/>
                 <input type="radio" name="answer" id="i">CSS3.1<br/>
@@ -70,7 +53,7 @@
                 <input type="radio" name="answer" id="i">CSS4<br/>
                 <input type="radio" name="answer" id="c">CSS3<br/>
             </form>
-            
+
             <form id="q5">
                 <p>What is JavaScript's technical name?</p><br/>
                 <input type="radio" name="answer" id="c">ECMAScript<br/>
@@ -78,7 +61,7 @@
                 <input type="radio" name="answer" id="i">JavaScript<br/>
                 <input type="radio" name="answer" id="i">JScript<br/>
             </form>
-            
+
             <form id="q6">
                 <p>What was one precedent organization to the Internet?</p><br/>
                 <input type="radio" name="answer" id="i">ECMANet<br/>
@@ -86,7 +69,7 @@
                 <input type="radio" name="answer" id="c">ARPANet<br/>
                 <input type="radio" name="answer" id="i">JavaNet<br/>
             </form>
-            
+
             <form id="q7">
                 <p>What was the first web browser?</p><br/>
                 <input type="radio" name="answer" id="i">Opera<br/>
@@ -94,319 +77,42 @@
                 <input type="radio" name="answer" id="c">Mosaic<br/>
                 <input type="radio" name="answer" id="i">Netscape<br/>
             </form>
-            
+
             <form id="q8">
                 <p>Who currently develops Web standards?</p><br/>
                 <input type="radio" name="answer" id="i">WWW<br/>
                 <input type="radio" name="answer" id="c">W3C<br/>
-                <input type="radio" name="answer" id="i">ECMA<br/>                
+                <input type="radio" name="answer" id="i">ECMA<br/>
                 <input type="radio" name="answer" id="i">CERN<br/>
             </form>
-            
+
             <form id="q9">
                 <p>Which research organization helped develop packet switching?</p><br/>
                 <input type="radio" name="answer" id="i">ACOR<br/>
-                <input type="radio" name="answer" id="i">CALICO<br/>                
+                <input type="radio" name="answer" id="i">CALICO<br/>
                 <input type="radio" name="answer" id="i">NPL<br/>
                 <input type="radio" name="answer" id="c">CYCLADES<br/>
             </form>
-            
+
             <form id="q10">
                 <p>Which government organization is responsible for internet surveillance?</p><br/>
                 <input type="radio" name="answer" id="c">NSA<br/>
                 <input type="radio" name="answer" id="i">AMTRAK<br/>
-                <input type="radio" name="answer" id="i">AHRQ<br/>                
+                <input type="radio" name="answer" id="i">AHRQ<br/>
                 <input type="radio" name="answer" id="i">USGS<br/>
             </form>
-            
+
             <input type="button" value="Submit" id="historySubmit" onclick="checkAnswerHistory()"><br/>
-            
+
                 </form>
             <p id="scoreOfHistory"></p>
             <p>Here you can navigate between different quizzes!</p>
-        <input type="button" name="answer" value="CSS" id="i" onclick="goToCss()"><br/>
-        <input type="button" name="answer" value="HTML" id="i" onclick="goToHtml()"><br/>
-        <input type="button" name="answer" value="Javascript" id="i" onclick="goToJavascript()"><br/>
-        <input type="button" value="Home" onclick="goHome()">
-        </div>    
+        </div>
         </form>
-        
+
     </div>
 
-    <div id="html">
-        <form>
-            <form id="q11" required>
-                <p>Which of the following is an HTML5 semantic element?</p><br/>
-                <input type="radio" name="answer" value="c" id="c">Footer<br/>
-                <input type="radio" name="answer" value="i" id="i">p<br/>
-                <input type="radio" name="answer" value="i" id="i">a<br/>
-                <input type="radio" name="answer" value="i" id="i">li<br/>    
-            </form>
-    
-            <form id="q12" required>
-                <p>Which of these is not considered a part of basic HTML markup?</p><br/>
-                <input type="radio" name="answer" value="i" id="c">attribute<br/>
-                <input type="radio" name="answer" value="i" id="i">name<br/>
-                <input type="radio" name="answer" value="i" id="i">value<br/>
-                <input type="radio" name="answer" value="c" id="c">property<br/>    
-            </form>
-    
-            <form id="q13" required>
-                <p>True or False: Ordered lists use the ul tag.</p><br/>
-                <input type="radio" name="answer" value="i" id="i">True<br/>
-                <input type="radio" name="answer" value="c" id="c">False</br>
-                </form>
-    
-            <form id="q14" required>
-                <p>Which HTML5 element is used to specify a footer for a document or section?</p><br/>
-                <input type="radio" name="answer" value="i" id="i">bottom<br/>
-                <input type="radio" name="answer" value="c" id="c">footer<br/>
-                <input type="radio" name="answer" value="i" id="i">section<br/>    
-            </form>
-    
-            <form id="q15" required>
-                <p> Which of the following is NOT an HTML table element?</p><br/>
-                <input type="radio" name="answer" value="i" id="i">th<br/>
-                <input type="radio" name="answer" value="i" id="i">caption<br/>
-                <input type="radio" name="answer" value="c" id="c">tcol<br/>
-                <input type="radio" name="answer" value="i" id="i">td<br/>    
-            </form>
-    
-            <form id="q16" required>
-                <p> Of these, which hexadeciaml code does not match its color?</p><br/>
-                <input type="radio" name="answer" value="i" id="i">#FF0000 - Red<br/>
-                <input type="radio" name="answer" value="c" id="c">#0000FF - Green<br/>
-                <input type="radio" name="answer" value="i" id="i">#FFFF00 - Yellow<br/>
-                <input type="radio" name="answer" value="i" id="i">#000000 - Black<br/>    
-            </form>
-    
-            <form id="q17" required>
-                <p> What is a semantic element?</p><br/>
-                <input type="radio" name="answer" value="i" id="i">An element that contains multiple words.<br/>
-                <input type="radio" name="answer" value="i" id="i">An element that is nested in another element.<br/>
-                <input type="radio" name="answer" value="i" id="i">An element that is unique to HTML5.<br/>
-                <input type="radio" name="answer" value="c" id="c">An element that describes itself in its name.<br/>    
-            </form>
-    
-            <form id="q18" required>
-                <p> Which of these is not a text formatting element in HTML?</p><br/>
-                <input type="radio" name="answer" value="c" id="c">imp<br/>
-                <input type="radio" name="answer" value="i" id="i">b<br/>
-                <input type="radio" name="answer" value="i" id="i">strong<br/>
-                <input type="radio" name="answer" value="i" id="i">em<br/>    
-            </form>
-    
-            <form id="q19" required>
-                <p> What is the preferred way that CSS can be applied to an HTML document?</p><br/>
-                <input type="radio" name="answer" value="i" id="i">inline<br/>
-                <input type="radio" name="answer" value="c" id="c">External Style Sheet<br/>
-                <input type="radio" name="answer" value="i" id="i">Internal Style Sheet<br/>
-            </form>
 
-            <form id="q20" required>
-                <p> True or False: When using elements in HTML5, it is  necessary to check for browser support.</p><br/>
-                <input type="radio" name="answer" value="c" id="c">True<br/>
-                <input type="radio" name="answer" value="i" id="i">False<br/>
-                
-            </form>
-        
-        <input type="button" value="Submit" onclick="checkAnswerHtml()">
-        </form>
-        <p id="scoreOfHtml"></p>
-<p>Here you can navigate between different quizzes!</p>
-        <input type="button" name="answer" value="History" id="c" onclick="goToHistory()"><br/>
-        <input type="button" name="answer" value="CSS" id="i" onclick="goToCss()"><br/>
-        <input type="button" name="answer" value="Javascript" id="i" onclick="goToJavascript()"><br/>
-<input type="button" value="Home" onclick="goHome()">
-    </div>
 
-    
-    <div id="css">
-        <form>
-            <form id="q21">
-                <p>For the border shorthand property, which of the following is the correct order?</p><br>
-                <input type="radio" name="answer" id="i">bottom right left top<br>
-                <input type="radio" name="answer" id="i">top bottom right left<br>
-                <input type="radio" name="answer" id="i">top left right bottom<br>
-                <input type="radio" name="answer" id="c">top right bottom left<br>           
-            </form>
-            
-            <form id="q22">
-                <p>Which of these is a CSS class selector?</p><br>
-                <input type="radio" name="answer" id="c">.class<br>
-                <input type="radio" name="answer" id="i">5px<br>
-                <input type="radio" name="answer" id="i">text-align<br>
-                <input type="radio" name="answer" id="i">background-position<br>
-            </form>
-            
-            <form id="q23">
-                <p>How do you create a comment in CSS?</p><br/>
-                <input type="radio" name="answer" id="i"> < !- --><br>
-                <input type="radio" name="answer" id="c">/* */<br>
-                <input type="radio" name="answer" id="i"> // <br>
-                <input type="radio" name="answer" id="i"> { }<br>
-            </form>
-            
-            <form id="q24">
-                <p>Which has the proper syntax for a CSS element?</p><br>
-                <input type="radio" name="answer" id="c"> main { background-color: white; } <br>
-                <input type="radio" name="answer" id="i"> main: { backgroundcolor: white; }<br>
-                <input type="radio" name="answer" id="i"> background-color { white; }<br>
-                <input type="radio" name="answer" id="i"> background-main { color: white; }<br>
-            </form>
-            
-            <form id="q25">
-                <p>Which is an ID selector?</p><br>
-                <input type="radio" name="answer" id="i">.row<br>
-                <input type="radio" name="answer" id="c">#header<br>
-                <input type="radio" name="answer" id="i">p<br>
-                <input type="radio" name="answer" id="i">.row::before<br>
-            </form>
-            
-            <form id="q26">
-                <p>How would you make a background of an element blue and transparent?</p><br>
-                <input type="radio" name="answer" id="c"> div { background-color: rgba(29,0,255,0.50);<br>
-                <input type="radio" name="answer" id="i"> div { background-color: blue; }<br>
-                <input type="radio" name="answer" id="i"> div { background-color: #00ffff; }<br>
-                <input type="radio" name="answer" id="i"> div { background-color: blue, transparent;}<br>
-            </form>
-            
-            <form id="q27">
-                <p>Which of these are the correct ways to define color?</p><br>
-                <input type="radio" name="answer" id="i"> color: #000<br>
-                <input type="radio" name="answer" id="i"> color: white<br>
-                <input type="radio" name="answer" id="c"> color: rgb(0,0,0)<br>
-                <input type="radio" name="answer" id="i"> color:"white"<br>
-            </form>
-            
-            <form id="q28">
-                <p>What is the proper way to select multiple elements?</p><br>
-                <input type="radio" name="answer" id="i"> h1:div {}<br>
-                <input type="radio" name="answer" id="i"> h1.div {}<br>
-                <input type="radio" name="answer" id="i"> h1-div {}<br>
-                <input type="radio" name="answer" id="c"> h1,div {}<br>
-            </form>
-            
-            <form id="q29">
-                <p>What measurement would you use for absolute positioning?</p><br>
-                <input type="radio" name="answer" id="i">3em<br>
-                <input type="radio" name="answer" id="i">3%<br>
-                <input type="radio" name="answer" id="c">3vw<br>
-                <input type="radio" name="answer" id="i">3px<br>
-            </form>
-            
-            <form id="q30">
-                <p>What is the order of the box model?</p><br/>
-                <input type="radio" name="answer" id="c"> margin-border-padding<br>
-                <input type="radio" name="answer" id="i"> padding-border-margin<br>
-                <input type="radio" name="answer" id="i"> border-margin-padding<br>
-                <input type="radio" name="answer" id="i"> margin-padding-border<br>
-            </form>
-            <input type="button" value="Submit" onclick="checkAnswerCss()">
-        </form> 
-        <p id="scoreOfCss"></p>
-            <p>Here you can navigate between different quizzes!</p>
-        <input type="button" name="answer" value="History" id="c" onclick="goToHistory()"><br/>
-        <input type="button" name="answer" value="HTML" id="i" onclick="goToHtml()"><br/>
-        <input type="button" name="answer" value="Javascript" id="i" onclick="goToJavascript()"><br/>  
-            <input type="button" value="Home" onclick="goHome()">
-    </div>
-            
-    <div id="javascript">
-        <form>
-            <form id="q31">
-                <p>Which of these event listeners will perform a function with user input?</p><br>
-                <input type="radio" name="answer" id="c">window.onload = function() {};<br>
-                <input type="radio" name="answer" id="i">window.onresize = function() {};<br>
-                <input type="radio" name="answer" id="i">window.onclick = function() {};<br>
-                <input type="radio" name="answer" id="i">window.keydown = function() {};<br>
-            </form>
-            
-            <form id="q32">
-                <p>What are several purposes of JavaScript libraries?</p><br>
-                <input type="radio" name="answer" id="i">to speed up production processes<br>
-                <input type="radio" name="answer" id="i">to allow the user to obtain large amounts of content<br/>
-                <input type="radio" name="answer" id="c">to access unique and well-written code <br>
-                <input type="radio" name="answer" id="i">to categorize code into different sections<br>
-            </form>
-            
-            <form id="q33">
-                <p>What is the proper syntax for defining a variable? </p><br>
-                <input type="radio" name="answer" id="i"> variable a = "2000";<br>
-                <input type="radio" name="answer" id="i"> var a = "2000";<br>
-                <input type="radio" name="answer" id="c"> var a = 2000<br>
-                <input type="radio" name="answer" id="i"> var function () a = "yes"<br>
-            </form>
-            
-            <form id="q34">
-                <p>What is a sensible hierarchy of DOM elements?</p><br>
-                <input type="radio" name="answer" id="i"> body>h1>h2>a>html><br>
-                <input type="radio" name="answer" id="i"> html>body>p>h1>h2><br>
-                <input type="radio" name="answer" id="i"> body>h2>h1>a><br>
-                <input type="radio" name="answer" id="c"> html>body>h1>h2>p><br>
-            </form>
-            
-            <form id="q35">
-                <p>Which block of code will properly create a For loop?</p><br>
-                <input type="radio" name="answer" id="c"> for (i=0; i < 5; i++)
-                <br/> 
-                <input type="radio" name="answer" id="i"> 
-                for i = 1 to 5
-                <br/>
-                <input type="radio" name="answer" id="c"> for (i=0; i < 5)<br>
-                <input type="radio" name="answer" id="i"> for (i < 5; i++) <br>
-            </form>
-            
-            <form id="q36">
-                <p>What must be done to loops in order for them to be controlled?<br>
-                <input type="radio" name="answer" id="i"> Loops must be contained inside functions.<br>
-                <input type="radio" name="answer" id="c"> Loops must be incremented.<br>
-                <input type="radio" name="answer" id="i"> Loops must contain a do while statement.<br>
-                <input type="radio" name="answer" id="i"> Loops must have strings around variables.<br>
-            </form>
-            
-            <form id="q37">
-                <p>Which JavaScript Math object will round a number down to the nearest integer?</p><br/>
-                <input type="radio" name="answer" id="i"> Math.int<br>
-                <input type="radio" name="answer" id="i"> Math.log<br>
-                <input type="radio" name="answer" id="c"> Math.floor<br>
-                <input type="radio" name="answer" id="i"> Math.ceil<br>
-            </form>
-            
-            <form id="q38">
-                <p>What are some common errors in JavaScript Syntax? (choose all that apply) </p><br>
-                <input type="radio" name="answer" id="i"> Missing closing bracket<br>
-                <input type="radio" name="answer" id="c"> Calling functions before defining them<br>
-                <input type="radio" name="answer" id="i"> Adding an extra semicolon at the end of statement<br>
-                <input type="radio" name="answer" id="i"> Using apostrophes and quotations on the same string<br>
-            </form>
-            
-            <form id="q39">
-                <p>True or False: the = sign is used to check a value.</p><br>
-                <input type="radio" name="answer" id="i"> True<br>
-                <input type="radio" name="answer" id="c"> False<br>
-            </form>
-                
-            <form id="q40">
-        <p>What syntax can be used to create elements with the DOM </p><br/>
-                <input type="radio" name="answer" id="i"> var newElement = document.createElement("li") <br/>
-                    myElement.addHTML("li"); <br>
-                <input type="radio" name="answer" id="i"> var newElement = document.createElement("li)<br/>
-                    myElement.setElement(newElement); <br>
-                <input type="radio" name="answer" id="i"> var newElement = document.li <br>
-                    myElement.appendChild(newElement); </br>
-                <input type="radio" name="answer" id="c"> var newElement = document.createElement("li") <br> myElement.appendChild(newElement); <br>
-            </form>
-        <input type="button" value="submit" onclick="checkAnswerJavascript()">
-        </form>
-        <p id="scoreOfJavascript"></p>
-        <p>Here you can navigate between different quizzes!</p>
-        <input type="button" name="answer" value="History" id="c" onclick="goToHistory()"><br/>
-        <input type="button" name="answer" value="CSS" id="i" onclick="goToCss()"><br/>
-        <input type="button" name="answer" value="HTML" id="i" onclick="goToHtml()"><br/>  
-        <input type="button" value="Home" onclick="goHome()">
-    </div>       
-  
 <script src="_assets/script.js"></script>
 </body>
-
