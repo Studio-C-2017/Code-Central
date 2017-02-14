@@ -1,99 +1,54 @@
-//define which answers are right, and which are wrong
-//give each answer a value, right ones give +1, wrong add 0
-//tell submit button to count selected answers, put value in a var
-//display the final score var
+// make result invisible
 
-var nickName;
-var error = document.createElement("p");
-var errorMsg = document.createTextNode("field error");
-var q1 = document.forms[1];
-var q11 = document.forms[2];
-var q21 = document.forms[3];
-var q31 = document.forms[4];
-var score = 0;
-var scorePart1;
-var quizSelect = document.forms[0];
+var	results = document.getElementById('results');
+var quizForm = document.getElementById('quiz');
+var scoreResult = document.getElementById('scoreResult');
+results.style.display = 'none';
 
+// check answers
 
-//var qArray = [document.getElementById("q1"), document.getelementbyid("q2")vbnm,];
+function showResult() {
+	var total = 10,
+			score = 0,
+			answers =  ["b","a","d","b","d","c","d","a","b","c"];
+	
+	// Get user input
+	var q1 = document.forms['quizForm']['q1'].value;
+	var q2 = document.forms['quizForm']['q2'].value;
+	var q3 = document.forms['quizForm']['q3'].value;
+	var q4 = document.forms['quizForm']['q4'].value;
+	var q5 = document.forms['quizForm']['q5'].value;
+    var q1 = document.forms['quizForm']['q6'].value;
+	var q2 = document.forms['quizForm']['q7'].value;
+	var q3 = document.forms['quizForm']['q8'].value;
+	var q4 = document.forms['quizForm']['q9'].value;
+	var q5 = document.forms['quizForm']['q10'].value;
 
+	// Validation
+/*	for(i=1; i<=total; i++) {
+		if(eval('q'+i) == null || eval('q'+i) == '') {
+			alert('You missed question #' + i);
+			return false;
+		}
+	} */
+	
+	// Check for Answers
+	for(i=1; i <= total; i++){
+		if(eval('q'+i) == answers[i -1]){
+				score++
+		}
+	}
+    
+  //  const correctAnswerStatus = document.querySelectorAll('.correctAnswer');
+    
+  //  correctAnswerStatus.innerHTML(answers[i]);
+	
+    quizForm.style.display = 'none';
+	results.style.display = 'block';
 
-//sets nickname var to the text form value, hides form after submission
+    scoreResult.innerHTML = 'Your Score is <strong>'+ score +'</strong> of <strong>'+ total+'</strong>';
+                
+	
+}
 
-//check answers
-function checkAnswer(){
-    if(q1[0].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[1].style.color = "red";
-    }
-
-    if(q2[2].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[2].style.color = "red";
-    }
-
-    if(q3[1].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[3].style.color = "red";
-    }
-
-    if(q4[3].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[4].style.color = "red";
-    }
-
-    if(q5[0].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[5].style.color = "red";
-    }
-
-    if(q6[2].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[6].style.color = "red";
-    }
-
-    if(q7[2].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[7].style.color = "red";
-    }
-
-    if(q8[1].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[8].style.color = "red";
-    }
-
-    if(q9[3].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[9].style.color = "red";
-    }
-
-    if(q10[0].checked == true){
-        score += 1;
-    } else{
-        score += 0;
-        document.forms[10].style.color = "red";
-    }
-
-    document.getElementById("score").innerHTML = "Hey " + nickName + ", you scored " + score + "/10!";
-
-    scorePart1 = score;
-};
 
