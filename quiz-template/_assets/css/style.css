@@ -30,7 +30,7 @@ p {
 body {
     width: 100%;
     background-color: #13498a;
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Raleway', 'Arial', sans-serif;
 }
 
 
@@ -167,6 +167,14 @@ h5 {
 }
 
 /* Forms */
+
+#title {
+    display: none;   
+}
+
+#nameForm {
+    display: none;   
+}
 
 #history {
   width: 30%;
