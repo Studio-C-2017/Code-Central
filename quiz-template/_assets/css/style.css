@@ -186,9 +186,11 @@ h5 {
   background-color: #13498a;
 }
 
-form {
-        width:100%;
-        position: relative;
+.question {
+    width: 100%;
+    padding: 15% 20%;
+    margin: 20% 80%;
+     position: relative;
         font-size: 1em;
         line-height: 24px;
         font-weight: bold;
@@ -196,12 +198,6 @@ form {
         text-decoration: none;
         margin-right:2em;
         background-color: #fff;
-    }
-
-.question {
-    width: 100%;
-    padding: 15% 20%;
-    margin: 20% 80%;
 }
 
 
