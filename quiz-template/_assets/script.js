@@ -4,13 +4,15 @@ var	results = document.getElementById('results');
 var quizForm = document.getElementById('quiz');
 var scoreResult = document.getElementById('scoreResult');
 results.style.display = 'none';
+var i;
 
 // check answers
 
 function showResult() {
 	var total = 10,
 			score = 0,
-			answers =  ["b","a","d","b","d","c","d","a","b","c"];
+			answers =  ["b","a","d","b","d","c","d","a","b","c"],
+            answerNames = ["red","a","d","b","d","c","d","a","b","c"];
 	
 	// Get user input
 	var q1 = document.forms['quizForm']['q1'].value;
@@ -39,7 +41,13 @@ function showResult() {
 		}
 	}
     
-  //  const correctAnswerStatus = document.querySelectorAll('.correctAnswer');
+    var correctAnswerStatus = document.getElementsByClassName('correctAnswer');
+    
+    for (i=0; i < correctAnswerStatus.length; i++) {
+        
+        correctAnswerStatus[i].innerHTML += answerNames[i];
+            
+    }
     
   //  correctAnswerStatus.innerHTML(answers[i]);
 	
