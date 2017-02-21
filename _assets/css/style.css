@@ -303,6 +303,12 @@ label {
 
 
 @media screen and (max-width: 500px) {
+    
+    
+    
+    body {
+        width: 500px;   
+    }
 
     .preface {
     margin-top: 5%;
@@ -332,42 +338,14 @@ label {
         left: 22%;   
     }
 
-    
-    
-}
-
-@media (min-width: 500px){
-
-  .quiz {
-    width: 100%;
-  }
-
-  .questionHeader {
-    font-size: 1.25em;
-  }
-
-  .quiz p {
-    font-size: 1em;
-  }
-
-  .question {
-    position: relative;
-    left: -150px;
-    width: 50%;
-    margin: 0;
-  }
-
-  .questionImage {
-    width: inherit;
-  }
-
   #submitButton {
     margin: 0;
     position: inherit;
     border-radius: 0;
-    width: 100%;
+    width: 500px;
     height: 100px;
     text-align: left;
   }
+    
 
 }
