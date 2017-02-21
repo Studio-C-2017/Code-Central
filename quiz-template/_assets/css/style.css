@@ -201,7 +201,7 @@ a {
 
 #logo {
   position: relative;
-  left: 20%;
+  width: inherit;
 }
 
 /* Forms */
@@ -396,10 +396,4 @@ label {
     }
 
 
-}
-
-@media (max-width: 600px) {
-  .questionImage {
-    width:
-  }
 }
