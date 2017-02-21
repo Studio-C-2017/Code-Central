@@ -205,6 +205,9 @@ h5 {
         background-color: #fff;
 }
 
+#scoreResult {
+    color: white;
+}
 
 input {
     position: relative;
