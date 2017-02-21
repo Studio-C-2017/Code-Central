@@ -414,4 +414,10 @@ label {
     .choice {
         margin-bottom: 10%;
     }
+
+
+@media only screen and (min-width: 500px){
+  body {
+    display: none;
+  }
 }
