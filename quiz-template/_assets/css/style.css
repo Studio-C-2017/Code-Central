@@ -59,7 +59,7 @@ h1 {
     position: relative;
     top: 20%;
     text-transform: uppercase;
-    
+
 }
 
 a {
@@ -89,7 +89,7 @@ a {
 }
 
 #link {
-    color: white;   
+    color: white;
     position: relative;
     left: 41%;
     top: 150px;
@@ -185,13 +185,14 @@ a {
 }
 
 .questionImage {
-    margin-bottom: 15%;   
+    margin-bottom: 15%;
     display: block;
     position: relative;
+    width: inherit;
 }
 
 .choiceImage {
-    margin-bottom: 15%;   
+    margin-bottom: 15%;
     display: block;
     position: relative;
     width: %;
@@ -200,7 +201,7 @@ a {
 
 #logo {
   position: relative;
-  left: 20%;
+  width: inherit;
 }
 
 /* Forms */
@@ -229,11 +230,11 @@ a {
 }
 
 #title {
-    display: none;   
+    display: none;
 }
 
 #nameForm {
-    display: none;   
+    display: none;
 }
 
 #results {
@@ -292,7 +293,7 @@ input[type=submit] {
 }
 
 .choice {
-    margin-bottom: 5%;   
+    margin-bottom: 5%;
 }
 
 label {
@@ -316,8 +317,8 @@ label {
     top: 10px;
     font-size: 2em;
     padding: 0.5em;
-    }     
-    
+    }
+
     #bottom {
     color: #fff;
     position: relative;
@@ -326,17 +327,17 @@ label {
     text-align: center;
     padding: 60px 10px 60px 10px;
     }
-    
+
     #first {
     margin-right: 0;
     }
-    
+
     .centerbox {
     position: relative;
     top: 10%;
     width: 550px;
     }
-    
+
     .question {
     width: 100%;
     padding: 15% 20%;
@@ -350,32 +351,32 @@ label {
     margin-right:2em;
     background-color: #fff;
     }
-    
+
     p {
-        max-width: 80%;   
+        max-width: 80%;
         position: relative;
         right: 10%;
     }
-    
+
     .desc {
         right: 0;
         left: 10%;
     }
-    
+
     .quiz {
         width: 100%;
     }
-    
+
     #submitButton {
-        left: 12em;   
+        left: 12em;
     }
-    
+
     #results {
-        left: 10%;  
+        left: 10%;
     }
-    
+
     #return {
-        left: 10%;   
+        left: 10%;
     }
 
     #logo {
@@ -384,15 +385,15 @@ label {
         width: 80%;
         height: 80%;
     }
-    
+
     .questionHeader {
         margin-left: -2em;
     }
-    
+
     .questionImage {
-        right: 15%;   
+        right: 15%;
     }
-    
+
     input {
         position: absolute;
         max-width: 55%; 
@@ -401,7 +402,7 @@ label {
     
    label {
         position: absolute;
-        max-width: 55%; 
+        max-width: 55%;
         left: 10%;
     } 
     
@@ -409,10 +410,10 @@ label {
         position: relative;
         left: -5%;
     }
-    
+
     .choice {
-        margin-bottom: 10%;   
+        margin-bottom: 10%;
     }
 
-    
+
 }
