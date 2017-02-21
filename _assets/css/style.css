@@ -1,0 +1,282 @@
+/*
+
+fonts:
+Calibri
+Forum
+Roboto
+pt-serif
+
+*/
+
+/* General */
+
+p {
+    position: relative;
+    font-size: 1.4em;
+    line-height: 35px;
+    font-weight: bold;
+    color: #13498a;
+    text-decoration: none;
+    margin-right:2em;
+    text-align: left;
+}
+
+body {
+    width: 100%;
+    background-color: #13498a;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    margin: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 0.7em;
+    color:#fff;
+    font-weight:bold;
+    font-size:6em;
+}
+
+
+/* Cumulative.html page Styles */
+
+#homeContainer {
+    position: relative;
+}
+
+#header {
+    background-position: 0% 90%;
+    position: relative;
+    height: 300px;
+    background-image: url("../images/stock.jpg");
+    background-repeat:repeat;
+}
+
+#headerText {
+    font-family: 'Montserrat', san-serif;
+    font-weight: 0;
+    margin: 0;
+    color: #FFCF36;
+    position: relative;
+    top: 20%;
+    text-transform: uppercase;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#return {
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 40%;
+    left: 80%;
+}
+
+#codeIntro {
+    left: 27%;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+#link {
+    color: white;   
+    position: relative;
+    left: 41%;
+    top: 5%;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+#link:hover {
+    background-color:#2461A3;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+
+
+#preface {
+    margin-top: 5%;
+    text-align: center;
+    color:#fff;
+    position: relative;
+    right: 3%;
+    font-family: 'Raleway';
+    font-size: 2em;
+}
+
+#bot {
+    margin-top: 15%;
+    height: 800px;
+    position: relative;
+    right: 3%;
+}
+
+#bottom {
+    color: #fff;
+    font-size: 60pt;
+    text-align: center;
+    padding: 60px 10px 60px 10px;
+}
+
+.centerbox {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quizbox {
+    border: 1px solid white;
+    width: 290px;
+    height: 1300px;
+    padding: 60px;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.quizbox:hover {
+    background-color:#2461A3;
+    transition: 0.3s;
+}
+
+#first {
+    margin-right: 60px;
+}
+
+.quizField {
+    font-size: 60pt;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.desc {
+    font-size: 24pt;
+    color: #fff;
+    font-weight: 100;
+    position: relative;
+    font-size: 1.4em;
+    line-height: 35px;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+}
+
+/* Quiz Styles */
+
+.questionHeader {
+  color: #ffcf34;
+  font-size: 2em;
+  text-align: left;
+  margin-left: -1em;
+}
+
+.questionImage {
+    margin-bottom: 15%;   
+    display: block;
+    width: 180%;
+}
+
+#logo {
+  position: relative;
+  left: 5%;
+  line-height: 150px;
+  height: 150px;
+}
+
+/* Forms */
+
+/* Buttons */
+
+#submitButton {
+    background-color: #ddcf34;
+    border: none;
+    color: #13498a;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#submitButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#title {
+    display: none;   
+}
+
+#nameForm {
+    display: none;   
+}
+
+#results {
+    color: white;
+    position: relative;
+    left: 80%;
+}
+
+#resultsText {
+    display: none;
+}
+
+.quiz {
+ 
+  width: 30%;
+}
+
+#quizResults {
+    display: none;
+}
+
+#qArray {
+  width: 100%;
+  margin: 0;
+  background-color: #13498a;
+}
+
+.question {
+    width: 100%;
+    padding: 5% 100% 5% 20%;
+    margin: 10% 10%;
+    position: relative;
+    font-size: 1em;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000030;
+    text-decoration: none;
+    margin-right:2em;
+    background-color: #fff;
+}
+
+input {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+input[type=submit] {
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+label {
+    position: relative;
+    left: 5%;
+    color: #13498a;
+    font-size: 1.3em;
+    margin-bottom: 5%;
+}
