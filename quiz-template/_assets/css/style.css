@@ -303,6 +303,12 @@ label {
     margin-bottom: 5%;
 }
 
+.longlabel {
+        position: absolute;
+        max-width: 55%; 
+        left: 10%;
+    } 
+
 @media screen and (max-width: 550px) {
 
     #link {
@@ -388,13 +394,20 @@ label {
     }
     
     input {
-        right: 15%;
+        position: absolute;
+        max-width: 55%; 
+        left: 5%;   
     }
     
-    label {
+   label {
         position: absolute;
         max-width: 55%; 
         left: 10%;
+    } 
+    
+    .longLabel {
+        position: relative;
+        left: -5%;
     }
     
     .choice {
