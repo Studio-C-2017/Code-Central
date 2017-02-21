@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Quiz</title>
+    <link type="text/css" rel="stylesheet" href="_assets/css/style.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="testselect">
+    <h1 id="title">Hello! Enter your name!</h1>
+    <form id="nameForm">
+        Nickname:<br/>
+        <input type="text" id="nameInput"><br/>
+        <input type="button" name="answer" value="Submit Name" id="c" onsubmit="return submitAnswers()"><br/>
+    </form>
+
+    <p id="error"></p>
+        </div>
+
+    <img src="_assets/images/logo.png" id="logo">
+    <div class="quiz" id="quizform">
+        <div>
+            <form name="quizForm" id="qArray" onsubmit="return submitAnswers()">
+            <div id="q1" class="question" required>
+              <h1 class="questionHeader">Question 1: </h1>
+                <p>List all the steps required to reach the flower using the following commands: “Move Right”, “Move Left”, “Move Up”, “Move Down”</p><br/>
+<img src="_assets/images/rookie/q1_headerImage.png" class="questionImage">
+                <input type="radio" name="q1" value="Parameter" id="q1a"><label>Move Right, Move Up, Move Right</label><br/>
+                <input type="radio" name="q1" value="Object" id="q1b"><label>Move Down, Move Up, Move Right</label><br/>
+                <input type="radio" name="q1" value="Variable" id="q1c"><label>Move Right, Move Right, Move Up</label><br/>
+                <input type="radio" name="q1" value="Function" id="q1d"><label>Move Right, Move Down, Move Right</label><br/>
+            </div>
+
+            <div id="q2" class="question" required>
+              <h1 class="questionHeader">Question 2: </h1>
+                <p>Which of the following would use to solve this maze?</p><br/>
+                <img src="_assets/images/rookie/q2_HeaderImage.PNG" class="questionImage">
+                <input type="radio" name="q2" value="Parameter" id="q2a">
+    <img src="_assets/images/rookie/q2_ChoiceA.PNG" class="choiceImage">
+                <input type="radio" name="q2" value="Object" id="q2b">
+    <img src="_assets/images/rookie/q2_ChoiceB.PNG" class="choiceImage">
+                <input type="radio" name="q2" value="Variable" id="q2c">
+    <img src="_assets/images/rookie/q2_ChoiceC.PNG" class="choiceImage">
+                <input type="radio" name="q2" value="Function" id="q2d">
+    <img src="_assets/images/rookie/q2_ChoiceD.PNG" class="choiceImage">
+            </div>
+
+
+            <div id="q3" class="question">
+               <h1 class="questionHeader">Question 3: </h1>
+                  <img src="_assets/images/rookie/q3_HeaderImage.PNG" class="questionImage">
+                <p>Which of the following would solve this maze?</p><br/>
+                 <input type="radio" name="q3" value="Variables" id="q3a">
+    <img src="_assets/images/rookie/q3_ChoiceA.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Functions" id="q3b">
+    <img src="_assets/images/rookie/q3_ChoiceB.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Objects" id="q3c">
+    <img src="_assets/images/rookie/q3_ChoiceC.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Classes" id="q3d">
+    <img src="_assets/images/rookie/q3_ChoiceD.PNG" class="choiceImage">
+            </div>
+
+            <div id="q4" class="question">
+              <h1 class="questionHeader">Question 4: </h1>
+                <img src="_assets/images/rookie/q4_HeaderImage.PNG" class="questionImage">
+                <p>Given the above picture. What does the following code do?
+</p><br/>
+            <img src="_assets/images/rookie/q4_ChoiceA.PNG" class="questionImage">
+             <div class="choice">
+                 <input type="radio" name="q4" value="True or False" id="q4a"><label>This function moves the bee to collect nectar and return to where they started.
+</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="q4" value="Yes or No" id="q4b">
+                <label>This function moves the bee to collect nectar and return to where they started.
+</label>
+                </div>
+            <div class="choice">
+                <input type="radio" name="q4" value="1 or 0" id="q4c"><label>This function moves the bee to collect nectar and return to where they started.
+ </label>
+                </div>
+            <div class="choice">
+                <input type="radio" name="q4" value="Right or Wrong" id="q4d"><label>This function moves the bee to collect nectar and return to where they started.
+</label>
+            </div>
+            </div>
+
+            <div id="q5" class="question">
+              <h1 class="questionHeader">Question 5: </h1>
+                <p>What does “move and get 4” block do?</p><br/>
+                  <img src="_assets/images/rookie/q5_HeaderImage1.PNG" class="questionImage">
+                    <img src="_assets/images/rookie/q5_HeaderImage2.PNG" class="questionImage">
+                <div class="choice">
+                 <input type="radio" name="q4" value="True or False" id="q4a"><label>This function moves the bee to collect nectar and return to where they started.</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="q4" value="Yes or No" id="q4b">
+                <label>This function moves the bee forward one square.</label>
+                </div>
+            <div class="choice">
+                <input type="radio" name="q4" value="1 or 0" id="q4c"><label>This function collects nectar 4 times.</label>
+                </div>
+            <div class="choice">
+                <input type="radio" name="q4" value="Right or Wrong" id="q4d"><label>This function moves the bee right, forward, and back again.</label>
+            </div
+                
+            </div>
+         </div>
+
+            <div id="q6" class="question">
+              <h1 class="questionHeader">Question 6: </h1>
+                <p>What does this above code do?</p><br/>
+                 <img src="_assets/images/rookie/q6_HeaderImage1.PNG" class="questionImage">
+                <img src="_assets/images/rookie/q6_HeaderImage2.PNG" class="questionImage">
+                <input type="text" name="q6" value="" id="q6a"><br/>
+            </div>
+
+            <div id="q7" class="question">
+              <h1 class="questionHeader">Question 7: </h1>
+                <p>Which of the following code will solve this maze?</p><br/>
+                 <img src="_assets/images/rookie/q7_HeaderImage.PNG" class="questionImage">
+                 <input type="radio" name="q3" value="Variables" id="q3a">
+                    <img src="_assets/images/rookie/q7_ChoiceA.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Functions" id="q3b">
+                    <img src="_assets/images/rookie/q7_ChoiceB.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Objects" id="q3c">
+                    <img src="_assets/images/rookie/q7_ChoiceC.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Classes" id="q3d">
+                    <img src="_assets/images/rookie/q7_ChoiceD.PNG" class="choiceImage">
+            </div>
+
+            <div id="q8" class="question">
+              <h1 class="questionHeader">Question 8: </h1>
+                <p>Which of the following properly utilizes nested loops to solve the above puzzle?</p><br/>
+                  <img src="_assets/images/rookie/q8_HeaderImage.PNG" class="questionImage">
+                    <input type="radio" name="q3" value="Variables" id="q3a">
+                    <img src="_assets/images/rookie/q8_ChoiceA.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Functions" id="q3b">
+                    <img src="_assets/images/rookie/q8_ChoiceB.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Objects" id="q3c">
+                    <img src="_assets/images/rookie/q8_ChoiceC.PNG" class="choiceImage">
+                <input type="radio" name="q3" value="Classes" id="q3d">
+                    <img src="_assets/images/rookie/q8_ChoiceD.PNG" class="choiceImage">
+            </div>
+
+            <div id="q9" class="question">
+              <h1 class="questionHeader">Question 9: </h1>
+                <p>If the drawing changes to be 300 in length, what needs to be changed?</p><br/>
+                <img src="_assets/images/rookie/q9_HeaderImage1.PNG" class="questionImage">
+            </div>
+
+            <div id="q10" class="question">
+              <h1 class="questionHeader">Question 10: </h1>
+                <p>The triangles are 50 pixels, fill in the blanks of the following blocks.</p><br/>
+                <img src="_assets/images/rookie/q10_HeaderImage1.PNG" class="questionImage">
+                <img src="_assets/images/rookie/q10_HeaderImage2.PNG" class="questionImage">
+                <input type="radio" name="q10" value="Methods" id="q10a"><label>Set length to 6 and repeat 50 times.</label><br/>
+                <input type="radio" name="q10" value="Objects" id="q10b"><label>Set length to 50 and repeat 6 times.</label><br/>
+                <input type="radio" name="q10" value="Parameters" id="q10c"><label>Set length to 50 and repeat 50 times.</label><br/>
+                <input type="radio" name="q10" value="Variables" id="q10d"><label>Set length to 6 and repeat 6 times.</label><br/>
+            </div>
+                
+        <div id="q11" class="question">
+              <h1 class="questionHeader">Question 11: </h1>
+                <p>The triangles are 50 pixels, fill in the blanks of the following blocks.</p><br/>
+                <img src="_assets/images/rookie/q11_HeaderImage1.PNG" class="questionImage">
+                <img src="_assets/images/rookie/q11_HeaderImage2.PNG" class="questionImage">
+            <div class="choice">
+                <input type="radio" name="q11" value="Methods" id="q11a"><label>The for loop moves the bee down and collects the nectar as many times as it has gone through the loop.</label><br/>
+            </div>
+            <div class="choice">
+                <input type="radio" name="q11" value="Objects" id="q11b"><label>The for loop moves the bee down 1 to 5 times.</label><br/>
+            </div>
+            <div class="choice">
+                <input type="radio" name="q11" value="Parameters" id="q11c"><label>The for loop only keeps collects the nectar.</label><br/>
+            </div>
+            <div class="choice">
+                <input type="radio" name="q11" value="Variables" id="q11d"><label>The for loop counts from 1 to 5.</label><br/>
+            </div>
+        </div>
+                
+            <div id="q12" class="question">
+              <h1 class="questionHeader">Question 12: </h1>
+                <p>Fill in the blank parameters for direction.</p><br/>
+                <img src="_assets/images/rookie/q12_HeaderImage1.PNG" class="questionImage">
+                <img src="_assets/images/rookie/q12_HeaderImage2.PNG" class="questionImage">
+            </div>
+                
+                
+        
+            <input type="submit" value="Submit Answers" id="submitButton" onclick="displayResult()">
+                
+            
+            </form>
+
+          </div>
+     </div>
+            
+    <div class="quiz" id="quizResults">
+            
+        <form>
+             <div id="q1" class="question" required>
+              <h1 class="questionHeader">Question 1: </h1>
+                <p>The word “hero” in hero.moveDown(), hero.moveLeft(), etc. refers to a what?</p><br/>
+                <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+            
+            <div id="q2" class="question" required>
+              <h1 class="questionHeader">Question 2: </h1>
+                <p> What are the names of the instructions “hero.moveDown()”, “hero.moveLeft()” etc.?</p><br/>
+                  <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q3" class="question" required>
+              <h1 class="questionHeader">Question 4: </h1>
+                <p>animal, favNum, and pi are examples of what?</p><br/>
+                 <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q4" class="question" required>
+              <h1 class="questionHeader">Question 5: </h1>
+                <p>What are the 2 possible values a Boolean can take on?</p><br/>
+                  <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q5" class="question" required>
+              <h1 class="questionHeader">Question 6: </h1>
+                <p>What is the value of “a”?</p><br/>
+                 <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q6" class="question" required>
+              <h1 class="questionHeader">Question 7: </h1>
+                <p>What is the output?</p><br/>
+                  <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q7" class="question" required>
+              <h1 class="questionHeader">Question 8: </h1>
+                <p>Study the code above. What is the value of “x”?</p><br/>
+                  <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q8" class="question" required>
+              <h1 class="questionHeader">Question 9: </h1>
+                <p>Study the code above. What is the value of “x”?</p><br/>
+                 <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q9" class="question" required>
+              <h1 class="questionHeader">Question 10: </h1>
+                <p>“bob” is an object with a property called “age”. How would you access this property to change the value of “age” to 5?
+</p><br/>
+                  <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+                
+            <div id="q10" class="question" required>
+              <h1 class="questionHeader">Question 10: </h1>
+                <p>In the function above, what are orange “x” and “y” referred to as?</p><br/>
+                  <p class="correctAnswer"> Correct Answer: </p>
+                <p class="userAnswer"> Your Answer: </p>
+            </div>
+            
+            <p id="results"></p>
+            
+            
+            <a href="cumulative.html" id="return">Return Home</a>
+                
+            </div>
+            
+        </form>
+
+    </div>
+
+
+    
+            
+     
+
+
+
+<script src="_assets/rookie_script.js"></script>
+</body>

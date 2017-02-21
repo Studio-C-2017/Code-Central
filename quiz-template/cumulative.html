@@ -1,126 +1,44 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="_assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Web Quiz</title>
+    <link type="text/css" rel="stylesheet" href="_assets/css/style.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="title">Hello! Enter your name!</h1>
-    <form id="nameForm">
-        nickname:<br/>
-        <input type="text" id="nameInput"><input type="button" value="Submit Name" onclick="getName()">
-    </form>
-    <p id="error"></p>
     
-    <div id="history">
-        <form>
-            <div id="qArray">
-            <form id="q1" required>
-                <p> What industry drove the creation of the internet?</p><br/>
-                <input type="radio" name="answer" value="c" id="c">military<br/>
-                <input type="radio" name="answer" value="i" id="i">shipping<br/>
-                <input type="radio" name="answer" value="i" id="i">construction<br/>
-                <input type="radio" name="answer" value="i" id="i">commerce<br/>    
-            </form>
-            
-            <form id="q2" required>
-                <p> Who is the father of the World Wide Web?</p><br/>
-                <input type="radio" name="answer" id="i">Bill H. Gates<br/>
-                <input type="radio" name="answer" id="i">Paul G. Allen<br/>
-                <input type="radio" name="answer" id="c">Tim B. Lee<br/>
-                <input type="radio" name="answer" id="i">Steve P. Jobs<br/>
-            </form>
-            
-            <form id="q3" required>
-                <p> What is the current version of HTML?</p><br/>
-                <input type="radio" name="answer" id="i">HTML2.5<br/>
-                <input type="radio" name="answer" id="c">HTML5<br/>
-                <input type="radio" name="answer" id="i">HTML5.1<br/>
-                <input type="radio" name="answer" id="i">HTML5.0.2<br/>
-            </form>
-            
-            <form id="q4">
-                <p>What version of CSS is the latest standard?</p><br/>
-                <input type="radio" name="answer" id="i">CSS3.1<br/>
-                <input type="radio" name="answer" id="i">NewCSS<br/>
-                <input type="radio" name="answer" id="i">CSS4<br/>
-                <input type="radio" name="answer" id="c">CSS3<br/>
-            </form>
-            
-            <form id="q5">
-                <p>What is JavaScript's technical name?</p><br/>
-                <input type="radio" name="answer" id="c">ECMAScript<br/>
-                <input type="radio" name="answer" id="i">Java<br/>
-                <input type="radio" name="answer" id="i">JavaScript<br/>
-                <input type="radio" name="answer" id="i">JScript<br/>
-            </form>
-            
-            <form id="q6">
-                <p>What was one precedent organization to the Internet?</p><br/>
-                <input type="radio" name="answer" id="i">ECMANet<br/>
-                <input type="radio" name="answer" id="i">TeleNet<br/>
-                <input type="radio" name="answer" id="c">ARPANet<br/>
-                <input type="radio" name="answer" id="i">JavaNet<br/>
-            </form>
-            
-            <form id="q7">
-                <p>What was the first web browser?</p><br/>
-                <input type="radio" name="answer" id="i">Opera<br/>
-                <input type="radio" name="answer" id="i">Internet Explorer<br/>
-                <input type="radio" name="answer" id="c">Mosaic<br/>
-                <input type="radio" name="answer" id="i">Netscape<br/>
-            </form>
-            
-            <form id="q8">
-                <p>Who currently develops Web standards?</p><br/>
-                <input type="radio" name="answer" id="i">WWW<br/>
-                <input type="radio" name="answer" id="c">W3C<br/>
-                <input type="radio" name="answer" id="i">ECMA<br/>                
-                <input type="radio" name="answer" id="i">CERN<br/>
-            </form>
-            
-            <form id="q9">
-                <p>Which research organization helped develop packet switching?</p><br/>
-                <input type="radio" name="answer" id="i">ACOR<br/>
-                <input type="radio" name="answer" id="i">CALICO<br/>                
-                <input type="radio" name="answer" id="i">NPL<br/>
-                <input type="radio" name="answer" id="c">CYCLADES<br/>
-            </form>
-            
-            <form id="q10">
-                <p>Which government organization is responsible for internet surveillance?</p><br/>
-                <input type="radio" name="answer" id="c">NSA<br/>
-                <input type="radio" name="answer" id="i">AMTRAK<br/>
-                <input type="radio" name="answer" id="i">AHRQ<br/>                
-                <input type="radio" name="answer" id="i">USGS<br/>
-            </form>
-            
-            <input type="button" value="Submit" id="finalSubmit" onclick="checkAnswerHistory()"><br/>
-            <input type="button" value="Continue to CSS" onclick="goToCSS()">
-            
-                </form>
-
-        </form>
-        <p id="scoreOfHistory"></p>
-    </div>
+<div id="homeContainer">
+<div id="header">
+    <h1 id="headerText">Systems Check</h1>
+</div>
     
-    <div id="css">
-        <form>
-            <div id="qArray">
-            <form id="2q1" required>
-                <p> What industry drove the creation of the internet?</p><br/>
-                <input type="radio" name="answer" value="c" id="c">military<br/>
-                <input type="radio" name="answer" value="i" id="i">shipping<br/>
-                <input type="radio" name="answer" value="i" id="i">construction<br/>
-                <input type="radio" name="answer" value="i" id="i">commerce<br/>    
-            </form>
+<h2 id="preface">Before we begin, how are you doing today?</h2>
+
+<a href="https://www.w3schools.com/html/" id="link">Click Here!</a>
+    
+<section id="bot">
+<h2 id="bottom">Choose your skill level!</h2>
+    <div class="centerbox">
+        <div class="quizbox" id="first">
+            <a href="proquiz.html">
+                <h4 class="quizField">Rookie</h4>
+                <p class="desc">If you're just learning the basics, click here!</p>
+            </a>
+        </div>
+        <div class="quizbox">
+            <a href="proquiz.html">
+                <h4 class="quizField">Pro</h4>
+                <p class="desc">If you're ready for a challenge, click here!</p>
+            </a>
+        </div>  
     </div>
-            
-            
+        </section>
+    
+</div>
 
-        <h2 id="scoreOfHistory"></h2>
-    </main>
-
-<script src="_assets/script.js" ></script>
+<script src="_assets/script.js"></script>
 </body>
-</html>
