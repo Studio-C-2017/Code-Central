@@ -259,6 +259,8 @@ label {
 
 /* Forms */
 
+@media only screen and (max-width: 500px) {
+
 /* Buttons */
 
 #submitButton {
@@ -298,6 +300,8 @@ label {
         left: 10%;
         padding-bottom: 20%;
     }
+    
+}
     
 }
 
