@@ -1,6 +1,6 @@
 function submitAnswers() {
-  var total = 10;
-  var score = 0;
+  var total = 10; // total number of questions
+  var score = 0; // set initial score to 0
   
   //Get user input
     
@@ -18,12 +18,12 @@ function submitAnswers() {
   
     
   // Validation  
- /* for(var i = 1; i <= total; i++) {
+  for(var i = 1; i <= total; i++) {
     if(eval('q' + i) === null || eval('q' + i) == '' ) {
       alert('Please complete question ' + i);
       return false;
     }
-  } */
+  } 
   
   // Set correct answers
   var answers = ["Object","Function","Variables","True or False","7","Hello James","32","2","bob.age","Parameters"];
@@ -34,11 +34,13 @@ function submitAnswers() {
       score++;
     }
   } 
+    
 
   // Display results
   var results = document.getElementById('results');
   results.innerHTML = '<h3>You scored </span>' + score + '</span> out of <span>' + total + '.' + '</span></h3>';
-  
+    
+    // result if statement
     if (score >= 5) {
         results.innerHTML += '<h3>Great job!</h3>';
     } else {

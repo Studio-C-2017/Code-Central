@@ -1,13 +1,3 @@
-/*
-
-fonts:
-Calibri
-Forum
-Roboto
-pt-serif
-
-*/
-
 /* General */
 
 body {
@@ -37,26 +27,11 @@ h1 {
     font-weight:bold;
     font-size:6em;
 }
-#submitButton {
-    background-color: #ddcf34;
-    border: none;
-    color: #13498a;
-    padding: 12px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2em;
-    border-radius: 15px;
-    position: relative;
-    left: 50%;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
 
-#submitButton:hover {
-    background-color: white;
-    color: black;
-}#
+a {
+    text-decoration: none;
+    color: white;
+}
 
 /* index.html page Styles */
 
@@ -76,16 +51,12 @@ h1 {
     font-family: 'Montserrat', san-serif;
     font-weight: 0;
     margin: 0;
+    left: -3%;
     color: #FFCF36;
     position: relative;
     top: 20%;
     text-transform: uppercase;
 
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }
 
 #return {
@@ -117,6 +88,9 @@ a {
     border: 1px solid white;
 }
 
+#linkTwo {
+    left: 40%;   
+}
 
 .preface {
     margin-top: 5%;
@@ -129,68 +103,30 @@ a {
     font-size: 2em;
 }
 
-#bot {
-    margin-top: 15%;
-    height: 800px;
-    position: relative;
-    right: 3%;
-}
-
-#bottom {
-    color: #fff;
-    font-size: 60pt;
-    text-align: center;
-    padding: 60px 10px 60px 10px;
-}
-
-.centerbox {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.quizbox {
-    border: 1px solid white;
-    width: 290px;
-    height: 1300px;
-    padding: 60px;
-    display: inline-block;
-    margin-top: 30px;
-    text-align: center;
-    background-color: transparent;
-}
-
-.quizbox:hover {
-    background-color:#2461A3;
-    transition: 0.3s;
-}
-
-#first {
-    margin-right: 60px;
-}
-
-.quizField {
-    font-size: 60pt;
-    color: #fff;
-    padding: 30px;
-    margin-top: 40px;
-    margin-bottom: 0;
-}
-
-.desc {
-    font-size: 24pt;
-    color: #fff;
-    font-weight: 100;
-    position: relative;
-    font-size: 1.4em;
-    line-height: 35px;
-    text-decoration: none;
-    margin: 0;
-    text-align: center;
+#flight {
+    right: 4%;
 }
 
 /* Quiz Styles */
+
+
+#logo {
+  position: relative;
+  left: 5%;
+  line-height: 150px;
+  height: 150px;
+  width: 40%;
+}
+
+.quiz {
+  width: 30%;
+}
+
+#qArray {
+  width: 100%;
+  margin: 0;
+  background-color: #13498a;
+}
 
 .questionHeader {
   color: #ffcf34;
@@ -203,46 +139,6 @@ a {
     margin-bottom: 15%;
     display: block;
     width: 180%;
-}
-
-#logo {
-  position: relative;
-  left: 5%;
-  line-height: 150px;
-  height: 150px;
-  width: 40%;
-}
-
-#title {
-    display: none;
-}
-
-#nameForm {
-    display: none;
-}
-
-#results {
-    color: white;
-    position: relative;
-    left: 50%;
-}
-
-#resultsText {
-    display: none;
-}
-
-.quiz {
-  width: 30%;
-}
-
-#quizResults {
-    display: none;
-}
-
-#qArray {
-  width: 100%;
-  margin: 0;
-  background-color: #13498a;
 }
 
 .question {
@@ -258,6 +154,22 @@ a {
     margin-right:2em;
     background-color: #fff;
 }
+
+#quizResults {
+    display: none;
+}
+
+#results {
+    color: white;
+    position: relative;
+    left: 50%;
+}
+
+#resultsText {
+    display: none;
+}
+
+/* Forms */
 
 input {
     position: relative;
@@ -276,9 +188,6 @@ label {
     font-size: 1.3em;
     margin-bottom: 5%;
 }
-
-/* Forms */
-
 
 /* Buttons */
 
@@ -334,9 +243,28 @@ label {
 }
     
 
-
+@media screen and (max-width: 1200px) {
+    
+    .question {
+        width: 500px;   
+    }
+    
+    .questionImage {
+        width: 700px;   
+    }
+        
+    p {
+        width: 700px;   
+    }
+    
+    
+}
 
 @media screen and (max-width: 500px) {
+    
+    p {
+        width: 400px;   
+    }
     
     #logo {
         left: 0%;
@@ -345,10 +273,6 @@ label {
     
     .quiz {
         width: 25%;
-    }
-    
-    p {
-        width: 400px;   
     }
     
     .questionHeader {
@@ -365,22 +289,26 @@ label {
     }
 
     .preface {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    text-align: center;
-    color:#fff;
-    position: relative;
-    right: 3%;
-    font-family: 'Raleway';
-    font-size: 1.2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        color:#fff;
+        position: relative;
+        right: 3%;
+        font-family: 'Raleway';
+        font-size: 1.2em;
     }
     
     .link {
-    position: relative;
-    left: 25%;
-    top: 10%;
-    font-size: 2em;
-    padding: 0.5em;
+        position: relative;
+        left: 25%;
+        top: 10%;
+        font-size: 2em;
+        padding: 0.5em;
+    }
+    
+    #linkTwo {
+        left: 20%;   
     }
     
     .container {
@@ -388,9 +316,6 @@ label {
         height: 200px;
     }
     
-    #linkTwo {
-        left: 22%;   
-    }
 
   #submitButton {
     margin: 0;
@@ -400,6 +325,10 @@ label {
     height: 100px;
     text-align: center;
   }
+    
+   #return {
+        width: 200px;   
+   }
     
 
 }
