@@ -214,6 +214,18 @@ label {
 
 @media screen and (max-width: 1004px) {
     
+    .container {
+        margin: 15% 0;   
+    }
+    
+    .link {
+        left: 32%;   
+    }
+    
+    #linkTwo {
+        left: 30%;   
+    }
+    
     .question {
         width: 500px;   
     }
